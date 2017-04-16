@@ -16,8 +16,10 @@ if(isset($_POST['user_name']) && isset($_POST['user_review']))
   $query = "INSERT INTO tbl_reviews VALUES(NULL,'$title','$name','$review')";
   $insert = mysqli_query($link, $query);
 
-  $query2 = "SELECT reviews_name, reviews_review FROM tbl_reviews WHERE reviews_name='$name' AND reviews_review ='$review'";
+  $query2 = "SELECT reviews_name,reviews_review FROM tbl_reviews WHERE reviews_name='$name' AND reviews_review ='$review'";
   $select = mysqli_query($link, $query2);
+
+
 
   if($row = mysqli_fetch_array($select))
   {

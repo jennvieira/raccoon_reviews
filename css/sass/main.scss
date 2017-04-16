@@ -27,6 +27,10 @@ $tablet: "(min-width: 768px)";
 $middle: "(min-width:860px)";
 $desktop: "(min-width: 992px)";
 
+body{
+  overflow-x: hidden;
+}
+
 //resets
 .nogutter {
   margin: 0 !important;
@@ -216,12 +220,13 @@ $desktop: "(min-width: 992px)";
 #details_section1 {
   background-color: $black;
   padding-bottom: 50px;
+  margin-bottom: -30px;
 }
 
 @media #{$middle}{
 #details_trailer{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
 }
 }
 
@@ -269,6 +274,27 @@ input[type="text"], textarea {
 }
 
 
+
+//trailer controls
+#controls{
+  padding: 20px;
+  height: 100px;
+}
+.playbut{
+  width: 40px;
+}
+
+.pausebut{
+  width: 40px;
+}
+
+.mutebut{
+  width: 70px;
+}
+
+.unmutebut{
+  width: 46px;
+}
 
 
 

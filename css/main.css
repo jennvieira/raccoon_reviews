@@ -8,6 +8,9 @@
   src: url("../fonts/atami/atami-regular.woff2") format("woff2"), url("../fonts/atami/atami-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+body {
+  overflow-x: hidden; }
+
 .nogutter {
   margin: 0 !important;
   padding: 0 !important; }
@@ -127,12 +130,9 @@
 
 #details_section1 {
   background-color: #000000;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-bottom: -30px; }
 
-@media (min-width: 860px) {
-  #details_trailer {
-    margin-top: 50px;
-    margin-bottom: 50px; } }
 #details_review {
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -166,5 +166,21 @@
     font-family: "Atami", sans-serif;
     color: #FFFFFF;
     padding: 5px 15px; }
+
+#controls {
+  padding: 20px;
+  height: 100px; }
+
+.playbut {
+  width: 40px; }
+
+.pausebut {
+  width: 40px; }
+
+.mutebut {
+  width: 70px; }
+
+.unmutebut {
+  width: 46px; }
 
 /*# sourceMappingURL=main.css.map */

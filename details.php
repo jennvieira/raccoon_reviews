@@ -79,23 +79,37 @@
 
 <section id="details_trailer">
 
-  <div class="container-fluid">
+  <div class="container-fluid nogutter">
     <div class="row justify-content-center align-items-center">
+      <div class="col-12">
 
-        <video controls>
+        <video id="mov_trailer" poster="img/hangover-feature.png" class="img-fluid">
           <?php
           if(!is_string($getSingle2)){
             while($row = mysqli_fetch_array($getSingle2)){
 
               echo "<source type=\"video/mp4\" src=\"video/{$row['movies_trailer']}\"></source>";
+              echo "Your browser does not support video";
             }
           }else{
             echo "<p>{$getSingle2}</p>";
           }
            ?>
-        <!-- <source type="video/mp4" src="video/Chantry_Island.mp4"></source> -->
         </video>
+      </div>
 
+    </div>
+
+    <div class="row justify-content-around align-items-center" id="controls">
+      <div class="col-1">
+
+            <a href="#" class="playpause"><img src="img/controls/play.svg" class="playbut" alt="Play Button"></a>
+      </div>
+
+      <div class="col-2">
+
+            <a href="#" class="muteunmute"><img src="img/controls/volume_full.svg" class="mutebut" alt="Mute/unmute Button"></a>
+      </div>
     </div>
   </div>
 
@@ -156,10 +170,10 @@
 
 
                     <label class="rev_name">Name:</label>
-                    <input type="text" name="name" id="review_name" placeholder="name" required>
+                    <input type="text" name="name" id="review_name" required>
 
                     <label class="rev_name">Your Review:</label>
-                    <textarea name="review" id="review_review" cols="30" rows="10" placeholder="your review" required>
+                    <textarea name="review" id="review_review" cols="30" rows="10" required>
                     </textarea>
 
                   <input type="submit" id="review_submit" value="submit">
@@ -178,6 +192,7 @@
 </section>
 
 <script src="script/reviews.js"></script>
+<script src="script/video.js"></script>
 
  <!-- <script src="script/main.js"></script> -->
  <script src="script/bootstrap/bootstrap.js"></script>
