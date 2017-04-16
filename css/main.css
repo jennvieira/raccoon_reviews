@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Alcubierre';
+  src: url("../fonts/alcubierre/alcubierre.woff2") format("woff2"), url("../fonts/alcubierre/alcubierre.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Atami';
+  src: url("../fonts/atami/atami-regular.woff2") format("woff2"), url("../fonts/atami/atami-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  overflow-x: hidden; }
+
+.nogutter {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.movie_button {
+  border: none;
+  background: none;
+  background-color: #FFFFFF;
+  font-family: "Atami", sans-serif;
+  border: 1px solid #FFFFFF;
+  font-size: .875em;
+  padding: 5px 15px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out; }
+
+.movie_button:hover {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+#main_header #search_con {
+  background-color: #000000; }
+  #main_header #search_con #search_bar {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #main_header #search_con #search_bar input {
+      display: inline;
+      font-family: "Alcubierre", sans-serif;
+      padding-top: 10px; }
+    #main_header #search_con #search_bar input[type="text"] {
+      border: none;
+      border: 1px solid #FFFFFF; }
+    #main_header #search_con #search_bar input[type="submit"] {
+      border: none;
+      background: none;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out; }
+    #main_header #search_con #search_bar input[type="submit"]:hover {
+      background-color: #FFFFFF;
+      color: #000000; }
+#main_header #feature_con {
+  background: url("../img/hangover-feature.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px; }
+  #main_header #feature_con #feature_title_con {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px 0;
+    text-align: center; }
+    #main_header #feature_con #feature_title_con .feature_title {
+      font-family: "Atami", sans-serif;
+      color: #FFFFFF;
+      font-size: 2em;
+      display: inline; }
+#main_header #filter_con {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  #main_header #filter_con .filter_but_con .filter_but {
+    width: 100%;
+    background-color: #000000;
+    border: none;
+    font-family: "Alcubierre", sans-serif;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding-top: 10px;
+    margin-top: 5px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out; }
+  #main_header #filter_con .filter_but_con .filter_but:hover {
+    background-color: #FFFFFF;
+    color: #000000; }
+
+@media (min-width: 768px) {
+  #main_header #search_con #search_bar {
+    text-align: left; }
+  #main_header #feature_con {
+    height: 350px; }
+    #main_header #feature_con #feature_title_con {
+      padding: 50px 0;
+      text-align: left; }
+  #main_header #filter_con {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
+#movies_section {
+  background-color: #000000;
+  padding: 20px 25px; }
+  #movies_section .movie_con {
+    margin-bottom: 25px;
+    text-align: center; }
+    #movies_section .movie_con .view_button {
+      margin-top: 10px; }
+
+@media (min-width: 768px) {
+  #movies_section {
+    padding: 20px 75px; } }
+.mov_title {
+  font-family: "Atami", sans-serif;
+  color: #FFFFFF;
+  margin-bottom: 20px; }
+
+.mov_desc {
+  color: #FFFFFF;
+  font-family: "Alcubierre", sans-serif;
+  max-height: 300px;
+  overflow: scroll; }
+
+.detail_movie_con {
+  text-align: center;
+  margin-bottom: 30px; }
+
+#details_section1 {
+  background-color: #000000;
+  padding-bottom: 50px;
+  margin-bottom: -30px; }
+
+#details_review {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #details_review .rev_heading {
+    font-family: "Atami", sans-serif;
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 25px; }
+  #details_review .rev_name {
+    font-family: "Atami", sans-serif;
+    color: #000000;
+    font-size: 1.2em;
+    margin-bottom: 10px; }
+  #details_review .rev_rev {
+    font-family: "Alcubierre", sans-serif;
+    color: #000000;
+    margin-bottom: 30px; }
+  #details_review label {
+    display: block; }
+  #details_review input[type="text"], #details_review textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Alcubierre", sans-serif;
+    padding-top: 10px;
+    font-size: .875em;
+    outline: none;
+    text-indent: 0; }
+  #details_review #review_submit {
+    background-color: #000000;
+    border: none;
+    font-family: "Atami", sans-serif;
+    color: #FFFFFF;
+    padding: 5px 15px; }
+
+#controls {
+  padding: 20px;
+  height: 100px; }
+
+.playbut {
+  width: 40px; }
+
+.pausebut {
+  width: 40px; }
+
+.mutebut {
+  width: 70px; }
+
+.unmutebut {
+  width: 46px; }
+
+/*# sourceMappingURL=main.css.map */

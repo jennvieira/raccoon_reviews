@@ -1,0 +1,311 @@
+//FONTS
+@font-face {
+    font-family: 'Alcubierre';
+    src: url('../fonts/alcubierre/alcubierre.woff2') format('woff2'),
+         url('../fonts/alcubierre/alcubierre.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atami';
+    src: url('../fonts/atami/atami-regular.woff2') format('woff2'),
+         url('../fonts/atami/atami-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$head: 'Atami', sans-serif;
+$body: 'Alcubierre', sans-serif;
+
+$black: #000000;
+$white: #FFFFFF;
+
+
+//media query variables
+$tablet: "(min-width: 768px)";
+$middle: "(min-width:860px)";
+$desktop: "(min-width: 992px)";
+
+body{
+  overflow-x: hidden;
+}
+
+//resets
+.nogutter {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+//site styles
+.movie_button{
+  border: none;
+  background:none;
+  background-color: $white;
+  font-family: $head;
+  border: 1px solid $white;
+  font-size: .875em;
+  padding: 5px 15px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+.movie_button:hover{
+  background-color: $black;
+  color: $white;
+}
+
+
+//heading
+
+#main_header{
+
+  #logo_con{
+
+  }
+
+  #search_con{
+    background-color: $black;
+    #search_bar{
+      // border: 1px solid pink;
+      text-align: center;
+      input{
+        display: inline;
+        font-family: $body;
+        padding-top: 10px;
+      }
+      input[type="text"]{
+        border:none;
+        border:1px solid $white;
+      }
+      input[type="submit"]{
+        border: none;
+        background: none;
+        color: $white;
+        border: 1px solid $white;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+      }
+      input[type="submit"]:hover{
+        background-color: $white;
+        color: $black;
+      }
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  #feature_con{
+    background: url('../img/hangover-feature.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    #feature_title_con{
+      background-color: rgba(0,0,0,0.4);
+      padding: 25px 0;
+      text-align: center;
+      .feature_title {
+        font-family: $head;
+        color: $white;
+        font-size: 2em;
+        display: inline;
+      }
+    }
+
+  }
+
+
+  #filter_con{
+    background-color: $black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .filter_but_con{
+    .filter_but{
+      width: 100%;
+      background-color: $black;
+      border: none;
+      font-family: $body;
+      color: $white;
+      border: 1px solid $white;
+      padding-top: 10px;
+      margin-top: 5px;
+      transition: all .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+    }
+    .filter_but:hover{
+      background-color: $white;
+      color: $black;
+    }
+  }
+  }
+
+
+}
+
+
+
+@media #{$tablet} {
+      #main_header{
+        #logo_con{
+
+        }
+        #search_con{
+          #search_bar{
+            text-align: left;
+          }
+        }
+        #feature_con{
+          height: 350px;
+          #feature_title_con{
+            padding: 50px 0;
+            text-align: left;
+            .feature_title {
+            }
+          }
+
+        }
+        #filter_con{
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+      }
+}
+
+
+
+//movies section
+
+#movies_section{
+  background-color: $black;
+  padding: 20px 25px;
+  .movie_con{
+    margin-bottom: 25px;
+    // border: 1px solid yellow;
+    text-align: center;
+    .view_button{
+      margin-top: 10px;
+    }
+  }
+}
+
+@media #{$tablet}{
+  #movies_section{
+    padding: 20px 75px;
+  }
+}
+
+
+
+//destails page
+
+.mov_title{
+  font-family: $head;
+  color: $white;
+  margin-bottom: 20px;
+}
+.mov_desc{
+  color: $white;
+  font-family: $body;
+  max-height: 300px;
+  overflow: scroll;
+}
+.detail_movie_con{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#details_section1 {
+  background-color: $black;
+  padding-bottom: 50px;
+  margin-bottom: -30px;
+}
+
+@media #{$middle}{
+#details_trailer{
+  // margin-top: 50px;
+  // margin-bottom: 50px;
+}
+}
+
+
+//review section
+#details_review{
+  padding-top: 50px;
+  padding-bottom: 50px;
+.rev_heading{
+  font-family: $head;
+  color: $black;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+.rev_name{
+  font-family: $head;
+  color: $black;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.rev_rev{
+  font-family: $body;
+  color: $black;
+  margin-bottom: 30px;
+}
+label{
+  display: block;
+}
+input[type="text"], textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: $body;
+  padding-top: 10px;
+  font-size: .875em;
+  outline: none;
+  text-indent: 0;
+}
+#review_submit{
+  background-color: $black;
+  border: none;
+  font-family: $head;
+  color: $white;
+  padding:5px 15px;
+}
+}
+
+
+
+//trailer controls
+#controls{
+  padding: 20px;
+  height: 100px;
+}
+.playbut{
+  width: 40px;
+}
+
+.pausebut{
+  width: 40px;
+}
+
+.mutebut{
+  width: 70px;
+}
+
+.unmutebut{
+  width: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end
